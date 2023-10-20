@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
     <title>Coloring Page App</title>
 
     <!-- tailwind css includes -->
@@ -23,11 +26,104 @@
     </script>
   </head>
   <body>
-    <header>
-      <nav class="container_fluid">Header</nav>
+    <!-- Header -->
+    <header class="mt-16">
+      <nav class="container_fluid">
+        <div class="flex flex-col md:flex-row items-center space-x-2">
+          <div class="w-[93px] h-[93px] md:w-[50px] md:h-[50px] mt-2">
+            <img src="./assets/logo.png" class="w-full h-full object-center" alt="logo" />
+          </div>
+          <h1 class="text-lg font-semibold">Coloring Page App</h1>
+          <div class="hidden md:flex items-center">
+            <img src="./assets/star.svg" alt="" />
+            <img src="./assets/star.svg" alt="" />
+            <img src="./assets/star.svg" alt="" />
+            <img src="./assets/star.svg" alt="" />
+            <img src="./assets/star.svg" alt="" />
+          </div>
+          <p class="text-[13px] font-semibold hidden md:block">AI Powered</p>
+        </div>
+      </nav>
     </header>
+
+    <!--  Main part started -->
     <main>
-      <section>Hero</section>
+      <!-- hero slider ================================================ -->
+      <section class="my-10">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/clor-image.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/clor-image.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/clor-image.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/clor-image.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/clor-image.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/clor-image.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/clor-image.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/clor-image.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/clor-image.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/clor-image.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/clor-image.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/clor-image.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/clor-image.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/clor-image.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/clor-image.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/clor-image.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/clor-image.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/clor-image.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/clor-image.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/clor-image.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/clor-image.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/clor-image.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/clor-image.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="container_fluid">
         <section>generate color Page</section>
         <section>Seasonal</section>
@@ -40,6 +136,49 @@
 
     <!-- write js from here -->
 
-    <script></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        breakpoints: {
+          // when window width is <= 320px
+          320: {
+            slidesPerView: 1,
+          },
+          // when window width is <= 480px
+          480: {
+            slidesPerView: 2,
+          },
+          // when window width is <= 640px
+          640: {
+            slidesPerView: 3,
+          },
+          // when window width is <= 768px
+          768: {
+            slidesPerView: 3,
+          },
+          // when window width is <= 1024px
+          1024: {
+            slidesPerView: 4,
+          },
+          // when window width is <= 1280px
+          1280: {
+            slidesPerView: 7,
+          },
+          // when window width is <= 1440px
+          1440: {
+            slidesPerView: 7,
+          },
+          // when window width is <= 1600px
+          1600: {
+            slidesPerView: 8,
+          },
+        },
+      });
+    </script>
   </body>
 </html>

@@ -33,6 +33,9 @@ li:hover {
   width: 364px;
   height: 250px;
 }
+.headingTextBgColor {
+  background: #ffdfaf;
+}
 
 @media (max-width: 768px) {
   .container_fluid {

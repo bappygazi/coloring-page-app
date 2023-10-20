@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  position: relative;
+}
+
+.container_fluid {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .container_fluid {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}
